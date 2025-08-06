@@ -209,7 +209,7 @@ class ReactSplitGrid extends React.Component {
 ReactSplitGrid.propTypes = {
     component: PropTypes.element,
     render: PropTypes.func,
-    children: PropTypes.element,
+    children: PropTypes.arrayOf(PropTypes.element),
     gridTemplateColumns: PropTypes.string,
     gridTemplateRows: PropTypes.string,
     columnMinSizes: PropTypes.objectOf(PropTypes.number),
